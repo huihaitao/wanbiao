@@ -1,0 +1,158 @@
+html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,img,input{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	background: #fafafa;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+header{
+	width: 100%;
+	height: 115px;
+}
+.header_a{
+	width: 840px;
+	height: 100%;
+	margin: 0 auto;
+}
+.header_a img{
+	margin: 33px 0 0 10px;
+}
+.content{
+	width: 100%;
+	margin-top: 30px;
+}
+.content_a{
+	width: 840px;
+	height: 100%;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.content_b h2{
+	font-size: 28px;
+	font-weight: 100;
+	color: #000;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.uls li{
+	width: 344px;
+	margin: 0 auto;
+}
+.txt{
+	display: inline-block;
+	width: 340px;
+	height: 40px;
+	margin: 0 auto;
+	outline: none;
+	text-indent: 30px;
+	float: left;
+}
+.uls li .imgs1{
+	float: left;
+	margin: -33px 0 0 7px;
+}
+.uls li .imgs2,#imgs21,#imgs22,#imgs23{
+	display: inline-block;
+	margin: -27px -19px 0 0;
+	float: right;
+	opacity: 0;
+}
+
+.uls li .imgs3{
+	display: inline-block;
+	float: right;
+	margin: -2px 2px 0 0;
+}
+.uls li #imgs4{
+	display: inline-block;
+	float: right;
+	margin: -27px -36px 0 0;
+	cursor: pointer;
+	z-index: 10;
+	transition: all 1s;
+}
+.uls li #imgs4:hover{
+	transform: rotateZ(180deg);
+	transition: all 1s;
+}
+
+#imgs{
+	width: 100px;
+	height: 34px;
+	border: 5px solid #007AFF;
+	float: right;
+	margin: -43px 0 0 0;
+}
+
+.uls li #spans,#spans0,#spans1,#spans2,#spans3{
+	display: inline-block;
+	line-height: 25px;
+	text-indent: 10px;
+	font-size: 12px;
+	color: red;
+	text-indent: 10px;
+}
+#txt4{
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	background: #B32424;
+	float: right;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	margin: -36px 3px 0 0;
+	outline: none;
+	cursor: pointer;
+	padding-left: 5px;
+}
+#zhuce{
+	display: block;
+	width: 340px;
+	height: 38px;
+	margin: 0 auto;
+	outline: none;
+	text-align: center;
+	color: #fff;
+	background: #b32424;
+	border: none;
+	cursor: pointer;
+	margin-top: 30px;
+}
+#h6{
+	text-align: center;
+	color: red;
+}
+.content_a p{
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	margin-top: 20px;
+}
+.content_a p a:hover{
+	text-decoration: underline;
+}
+footer p{
+	text-align: center;
+	font-size:12px;
+	line-height: 20px;
+}
+footer .copyright{
+	color:#999;
+}
+#shangbiao{
+	padding:10px 0 20px;
+	text-align: center;
+}
