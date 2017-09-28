@@ -1,7 +1,10 @@
-@charset "utf-8";
 html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,img,input{
 	margin: 0;
 	padding: 0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	background: #fafafa;
 }
 ul,li{
 	list-style: none;
@@ -16,8 +19,5 @@ header{
 	width: 100%;
 	height: 115px;
 }
-.header_a{
-	width: 840px;
-	height: 100%;
-	margin: 0 auto;
-}
+
+

@@ -1,0 +1,153 @@
+header {
+  width: 100%;
+  height: 97px; }
+  header #header_a {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto; }
+    header #header_a img {
+      margin-top: 15px; }
+
+#banner {
+  width: 100%;
+  height: 480px;
+  background: url(../img/banner.jpg) center; }
+  #banner .banner_a {
+    width: 360px;
+    height: 415px;
+    background: url(../img/lborder.png) right center no-repeat;
+    float: right;
+    margin: 30px 130px 0 0; }
+    #banner .banner_a .banner_b {
+      width: 280px;
+      height: 330px;
+      margin: 42px 0 0 40px; }
+      #banner .banner_a .banner_b .title {
+        display: flex;
+        justify-content: space-between; }
+        #banner .banner_a .banner_b .title p {
+          font-size: 20px; }
+        #banner .banner_a .banner_b .title span {
+          width: 50px;
+          display: inline-block;
+          background: url(../img/inputbg.png) no-repeat 38px -46px;
+          margin-left: 40px; }
+        #banner .banner_a .banner_b .title a {
+          color: #666;
+          font-size: 14px; }
+      #banner .banner_a .banner_b .input {
+        width: 282px;
+        height: 40px;
+        border: 1px solid #ccc;
+        margin-top: 17px; }
+        #banner .banner_a .banner_b .input #txt1 {
+          display: block;
+          width: 282px;
+          height: 40px;
+          outline: none;
+          border: none;
+          text-indent: 30px;
+          margin-top: -31px; }
+        #banner .banner_a .banner_b .input .span1 {
+          width: 26px;
+          height: 15px;
+          margin-top: 12px;
+          display: inline-block;
+          background: url(../img/inputbg.png) no-repeat 6px -2px; }
+        #banner .banner_a .banner_b .input p {
+          font-size: 12px;
+          color: red;
+          margin-left: 10px; }
+        #banner .banner_a .banner_b .input .span2 {
+          width: 26px;
+          height: 15px;
+          margin-top: 12px;
+          display: inline-block;
+          background: url(../img/inputbg.png) no-repeat 6px -31px; }
+      #banner .banner_a .banner_b .duoxuan {
+        margin-top: 13px; }
+        #banner .banner_a .banner_b .duoxuan span {
+          font-size: 12px; }
+      #banner .banner_a .banner_b #login {
+        width: 280px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background: #ce0000;
+        margin-top: 20px; }
+      #banner .banner_a .banner_b .real {
+        margin-top: 13px;
+        display: flex;
+        justify-content: space-between; }
+        #banner .banner_a .banner_b .real a {
+          font-size: 12px;
+          color: #999; }
+      #banner .banner_a .banner_b .p1 {
+        font-size: 12px;
+        color: #6a6a6a;
+        margin-top: 30px; }
+      #banner .banner_a .banner_b .hezuo {
+        margin-top: 5px;
+        float: left; }
+        #banner .banner_a .banner_b .hezuo a {
+          background: url(../img/hezuo.gif) no-repeat;
+          font-size: 12px;
+          color: #005aa0; }
+        #banner .banner_a .banner_b .hezuo .span3 {
+          margin-left: 5px;
+          color: #bbb; }
+        #banner .banner_a .banner_b .hezuo .hezuo1 {
+          display: inline-block;
+          text-indent: 17px;
+          background-position: 0 -129px; }
+        #banner .banner_a .banner_b .hezuo .hezuo2 {
+          display: inline-block;
+          text-indent: 17px;
+          background-position: 0 -262px; }
+        #banner .banner_a .banner_b .hezuo .hezuo3 {
+          display: inline-block;
+          text-indent: 17px;
+          background-position: 0 -396px; }
+        #banner .banner_a .banner_b .hezuo .hezuo4 {
+          display: inline-block;
+          text-indent: 17px;
+          background-position: 0 -461px; }
+
+footer {
+  width: 100%;
+  height: 105px; }
+  footer .left {
+    width: 600px;
+    height: 100%;
+    margin-left: 185px;
+    float: left; }
+    footer .left .left_a {
+      padding-top: 27px; }
+      footer .left .left_a a {
+        font-size: 12px;
+        color: #333;
+        padding: 0 5px; }
+      footer .left .left_a a:hover {
+        color: #B30000; }
+      footer .left .left_a span {
+        margin-left: 3px;
+        color: #333; }
+    footer .left p {
+      font-size: 12px;
+      color: #bbb;
+      margin-top: 10px; }
+  footer .right {
+    width: 175px;
+    height: 100%;
+    float: right;
+    margin-right: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+/*# sourceMappingURL=loginT.css.map */

@@ -63,7 +63,7 @@ header{
 	float: left;
 	margin: -33px 0 0 7px;
 }
-.uls li .imgs2,#imgs21,#imgs22,#imgs23{
+.uls li .imgs2,#imgs20,#imgs21,#imgs22,#imgs23{
 	display: inline-block;
 	margin: -27px -19px 0 0;
 	float: right;
@@ -73,7 +73,7 @@ header{
 .uls li .imgs3{
 	display: inline-block;
 	float: right;
-	margin: -2px 2px 0 0;
+	margin: 0px 2px 0 0;
 }
 .uls li #imgs4{
 	display: inline-block;
@@ -89,9 +89,8 @@ header{
 }
 
 #imgs{
-	width: 100px;
+	width: 105px;
 	height: 34px;
-	border: 5px solid #007AFF;
 	float: right;
 	margin: -43px 0 0 0;
 }
