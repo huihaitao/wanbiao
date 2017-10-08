@@ -239,17 +239,17 @@ $("#lbwf_a").mouseleave(function(){
 })
 
 $("#you").click(function(){
-	$("#lbwf_b").animate({
+	$("#lbwf_b").stop().animate({
 		left:"-1200px"
-	},500,function(){
+	},200,function(){
 		$("#lbwf_b").css("left","0");
 	})
 	
 })
 $("#zuo").click(function(){
-	$("#lbwf_b").animate({
+	$("#lbwf_b").stop().animate({
 		left:"0px"
-	},500,function(){
+	},300,function(){
 		$("#lbwf_b").css("left","-1200px");
 	})
 })
@@ -386,41 +386,37 @@ var mySwiper = new Swiper ('.hot_left3', {
 		$("#cebianlan1_a").css("opacity","1")
 		$("#cebianlan1_a").animate({
 			 right:"70px"
-		},500)
+		},300)
 	})
 	$("#cebianlan1_a img").click(function(){
 		$("#cebianlan1_a").animate({
-			 right:"50px"
+			 right:"-227px"
 		},200,function(){
 			$("#cebianlan1_a").css("opacity","0")
 		})
 		
 	})
 //	---------------------------------右导航
-	$(".cb a").mouseenter(function(){
-		$(this).nextAll("div").animate({
-			opacity:"1"
-		},300)
-	
-	})
-	$(".cb a").mouseleave(function(){
+$(".cb a").mouseenter(function(){
+	$(this).nextAll("div").delay(100).show(200);
+
+})
+$(".cb a").mouseleave(function(){
 		$(".car").mouseenter(function(){
 			$(this).stop()
 		})
 		$(".car_m").mouseenter(function(){
 			$(this).stop()
 		})
-		  $(this).nextAll("div").animate({
-			opacity:"0"
-		  },300)
-	})
+		  $(this).nextAll("div").hide(100)
+	})	
 	$(".car").mouseleave(function(){
-			$(this).css("opacity","0")
+			$(this).hide(100)
 	})
 	$(".car_m").mouseleave(function(){
-			$(this).css("opacity","0")
+			$(this).hide(100)
 	})
-	
+		
 //	---------------------------------------------回到顶部
 	$("#dingbu").click(function(){
 		$("body,html").animate({

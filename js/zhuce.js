@@ -167,7 +167,7 @@ w$("zhuce").onclick = function(){
 					success:function(data){
 								if(data=="1"){
 									alert("恭喜您，您已注册成功")
-									window.location.href="index.html";
+									window.location.href="login.html";
 								}else{
 									alert("您好，您的用户名已经被占用了，请重新注册");
 									w$("txt1").value="";

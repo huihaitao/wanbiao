@@ -273,7 +273,6 @@ img{
 #nav{
 	width: 100%;
 	height: 42px;
-	margin-top: 1px;
 	position: relative;
 	z-index: 2;
 	background: #fafafa;
@@ -341,7 +340,8 @@ img{
 	height: 430px;
 	background:url(../img/category-bg.png) repeat;
 	position: absolute;
-	top: 42px;
+	top: 41px;
+	border-bottom: 1px solid #302f32;
 	z-index: -1;
 }
 .nava_ac{
@@ -494,7 +494,7 @@ img{
 	height: 1000px;
 	background: green;
 	opacity: 0.6;
-	z-index: -2;
+	z-index: 100;
 	display: none;
 }*/
 #nava_c{
@@ -593,7 +593,6 @@ img{
 #wrap li,#wrap li img{
 	width: 100%;
 	height: 430px;
-	/*transform: scale(1.2);*/
 }
 #wrap li {
 	transition :opacity 1s;
@@ -699,7 +698,6 @@ img{
 #lbwf_b{
 	width: 2410px;
 	height: 100%;
-	/*overflow: hidden;*/
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1507,7 +1505,7 @@ footer .foot{
 	position: fixed;
 	right: 0;
 	top: 30%;
-	z-index: 1000;
+	z-index: 2;
 }
 #cebianlan1_a img:hover{
 	transform: rotateZ(360deg);
@@ -1519,11 +1517,12 @@ footer .foot{
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	background: #fff;
-	z-index: 1000;
+	z-index: 2;
 	position: fixed;
-	right: 50px;
+	right:-227px;
 	top: 30%;
 	opacity: 0;
+	/*display: none;*/
 }
 #cebianlan1_a img{
 	position: absolute;
@@ -1574,10 +1573,9 @@ footer .foot{
 	width: 48px;
 	height: 190px;
 	position: fixed;
-	/*position: absolute;*/
 	right: 6px;
 	top: 60%;
-	z-index: 1000;
+	z-index: 2;
 }
 .cb{
 	position: relative;
@@ -1595,20 +1593,20 @@ footer .foot{
 	top:0px;
 	border: 1px solid #ccc;
 	border-right: 0;
-	opacity: 0;
+	display: none;
 }
 .sanjiao{
 	width: 0;
 	height: 0;
 	background:none;
-	border:8px solid blue;
+	border:5px solid blue;
 	border-right-color: transparent;
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 	border-left-color: #fff;
 	position: absolute;
-	top: 16px;
-	opacity: 0;
+	top: 21px;
+	display: none;
 }
 .cb a{
 	display: block;
@@ -1664,7 +1662,7 @@ footer .foot{
 	position: absolute;
 	right: 48px;
 	top:-119px;
-	opacity: 0;
+	display: none;
 }
 .car_m img{
 	margin: 15px 0 0 10px;
