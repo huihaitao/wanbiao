@@ -215,7 +215,18 @@ $("#nava_c").mouseleave(function(){
    	
    	window.onload=function(){//--------------------------------------------------------------------页面加载完成
 		
-		startTime();//-------------------------------大轮播图函数调用开启定时器
+		startTime();
+		
+		//--------------------------------获取cookie
+			var userName=getCookie("userName");
+			if(userName==""){
+				w$("yonghu1").style.cssText="opacity: 1;"
+			}else{
+				w$("yonghu").style.cssText="opacity: 1;"
+				w$("yonghu1").style.cssText="opacity: 0;"
+				w$("yonghu").innerHTML="欢迎您："+userName
+			}
+
 	}
 
 //-----------------------------------------无缝
@@ -376,7 +387,7 @@ var mySwiper = new Swiper ('.hot_left3', {
 //	-----------------------------------------猜你喜欢Like
 
 	$(".like_rightb a").mouseenter(function(){
-		$(this).parent().siblings().css("opacity","0.5")
+		$(this).parent().siblings().css("opacity","0.4")
 	})
 	$(".like_rightb a").mouseleave(function(){
 		$(this).parent().siblings().css("opacity","1")
@@ -431,11 +442,6 @@ $(".cb a").mouseleave(function(){
 	 		"scrollTop":sTop,
 	 	},500)
 	})
-
-	
-
-
-
 
 
 

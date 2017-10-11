@@ -1,4 +1,4 @@
-吧jQuery.fn.extend(
+jQuery.fn.extend(
 	{
 		"bigMirror":function(obj){		
 			//类（放大镜）

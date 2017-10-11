@@ -20,7 +20,7 @@
 				</div>
 				<ul class="uls">
 					<li>
-						<input type="text" class="txt" id="txt1" placeholder="请输入手机号码" required="required"/>
+						<input type="text" class="txt" id="txt1" placeholder="请输入手机号码" required="required" onkeyup="value=value.replace(/[^\d]/g,'')"/>
 						<img src="img/txt01.png" alt="" class="imgs1"/>
 						<img src="img/dui.png" alt="" class="imgs2" id="imgs2"/>
 						<span id="spans"></span>

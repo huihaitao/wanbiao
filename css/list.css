@@ -19,7 +19,23 @@
 	background: #333;
 	height: 28px;
 	font-size: 12px;
+	position: relative;
+	z-index:100;
 }
+#yonghu1{
+	z-index: 10;
+	opacity: 1;
+}
+#yonghu{
+	float: left;
+	line-height: 28px;
+	position: absolute;
+	left:658px;
+	top: 0;
+	opacity: 0;
+	/*z-index: -1;*/
+}
+
 #header ul{
 	float: right;
 	margin-right: 90px;

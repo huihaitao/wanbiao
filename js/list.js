@@ -1,37 +1,4 @@
 //------------------------------------连接数据库
-//动态获取list
-window.onload=function(){
-	var str1="";
-	$.ajax({
-		type:"get",
-		url:"php/getGoodsList.php",
-		async:true,
-		success:function(data){
-			//data  json类的数组
-			//console.log(data);
-			var str=eval(data);
-			//str是 解析data数组的 每一条json元素
-			console.log(str);	
-			for(var i=0;i<str.length;i++){
-				//str1是每个商品列表的结构
-				var str1="<div id='content_b'>"
-				+"<div id='content_c'>"
-					+"<img src='"+str[i].goodsImg+"' id='list02'/>"
-					+"<a href='xiangqing.html'><img src='"+str[i].beiyong1+"'/></a></div>"
-				+"<p id='p2'>"+str[i].goodsDesc+"</p>"
-				+"<p class='p3'>"
-					+"<span>￥"+str[i].goodsPrice+"</span><span>￥"+str[i].beiyong2+"</span>"
-				+"</p></div>";
-					
-				  	$("#content_a").append(str1);
-			}
-		
-		
-		}
-	});
-	
-	
-}
 
 $("#zixun_a").click(function(){
 	$("#zixun").animate({
@@ -137,6 +104,7 @@ function showImg(){
    }
    w$("nava_bimgs1").style.top=currTop+"px"
 }
+
 //-------------------------------导航left-（全部腕表）---------------------------------------------------
 $("#nava_a").mouseenter(function(){
 	$("#nava_ab").stop().slideDown(400)
@@ -180,6 +148,54 @@ $("#nava_c").mouseleave(function(){
 	$(".shop_a img").mouseleave(function(){
 		$(this).siblings().css("opacity","1")
 	})
+//--------------------------------获取cookie
+
+
+
+
+//动态获取list
+window.onload=function(){
+	var str1="";
+	$.ajax({
+		type:"get",
+		url:"php/getGoodsList.php",
+		async:true,
+		success:function(data){
+			//data  json类的数组
+			//console.log(data);
+			var str=eval(data);
+			//str是 解析data数组的 每一条json元素
+			console.log(str);	
+			for(var i=0;i<str.length;i++){
+				//str1是每个商品列表的结构
+				var str1="<div id='content_b'>"
+				+"<div id='content_c'>"
+					+"<img src='"+str[i].goodsImg+"' id='list02'/>"
+					+"<a href='xiangqing.html'><img src='"+str[i].beiyong1+"'/></a></div>"
+				+"<p id='p2'>"+str[i].goodsDesc+"</p>"
+				+"<p class='p3'>"
+					+"<span>￥"+str[i].goodsPrice+"</span><span>￥"+str[i].beiyong2+"</span>"
+				+"</p></div>";
+					
+				  	$("#content_a").append(str1);
+			}
+		
+		
+		}
+	});
+	
+	startTime();//-----------------------hot小图标调用
+	
+	var userName=getCookie("userName");
+	if(w$("yonghu1").style.cssText="opacity: 1;"){
+	w$("yonghu").style.cssText="opacity: 1;"
+		w$("yonghu1").style.cssText="opacity: 0;"
+		w$("yonghu").innerHTML="欢迎您："+userName
+	
+}else{
+	return;
+}
+}
 	
 
 

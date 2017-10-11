@@ -100,8 +100,12 @@ function showImg(){
    }else {
    		addTop=-2;
    }
-   w$("nava_bimgs1").style.top=currTop+"px"
+   w$("nava_bimgs2").style.top=currTop+"px"
 }
+window.onload=function(){//--------------------------------------------------------------------页面加载完成
+		
+		startTime();
+	}
 //-------------------------------导航left-（全部腕表）---------------------------------------------------
 $("#nava_a").mouseenter(function(){
 	$("#nava_ab").stop().slideDown(400)
@@ -149,9 +153,18 @@ $("#nava_c").mouseleave(function(){
 //-----------------------------------------图片内部放大------------
 var arr=["images/detail/pic1.jpg","images/detail/pic5.jpg","images/detail/pic4.jpg","images/detail/pic3.jpg","images/detail/pic2.jpg"];
 	$("#box").bigMirror({boxDom:$("#box")[0],bigImg:arr[0]});
-$(".ul-pic li").click(function(){
+$(".ul-pic li").mouseenter(function(){
+	$(this).siblings().css("opacity","0.4")
+	$(this).css({transform:"scale(1.1)",transition: "all 0.5s"})
+//	---------------------------
 	 var num=$(this).index();
 	 $("#box").append($("<img/>"));
 	 $("#box img").attr("src",arr[num]);
 	 $("#box").bigMirror({boxDom:$("#box")[0],bigImg:arr[num]});
+//	 -------------------------
 })
+$(".ul-pic li").mouseleave(function(){
+	$(this).siblings().css("opacity","1")
+	$(this).css({transform:"scale(1)",transition: "all 0.5s"})
+})
+

@@ -36,7 +36,35 @@ img{
 	background: #333;
 	height: 28px;
 	font-size: 12px;
+	position: relative;
+	z-index:100;
 }
+#yonghu1{
+	z-index: 10;
+	opacity: 1;
+}
+#yonghu{
+	float: left;
+	line-height: 28px;
+	position: absolute;
+	left:658px;
+	top: 0;
+	opacity: 0;
+	/*z-index: -1;*/
+}
+#lis2{
+	width: 46px;
+	height: 26px;
+	border: 1px solid #ccc;
+	background: red;
+	position: absolute;
+	top: 0px;
+	left: 790px;
+	text-align: center;
+	font-size: 14px;
+	display: none;
+}
+
 #header ul{
 	float: right;
 	margin-right: 90px;
@@ -78,8 +106,8 @@ img{
 	height: 226px;
 	background: #fff;
 	position: absolute;
-	top: 88px;
-	left: 777px;
+	top: 27px;
+	left: 752px;
 	box-shadow: -1px 1px 10px 1px #ccc;
 	display: none;
 }
@@ -125,8 +153,8 @@ img{
 	height: 170px;
 	background: #fff;
 	position: absolute;
-	right: 170px;
-	top: 88px;
+	right: 195px;
+	top: 27px;
 	padding: 0 20px;
 	box-shadow: -1px 1px 10px 1px #ccc;
 	display: none;

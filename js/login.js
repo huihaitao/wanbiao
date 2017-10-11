@@ -8,6 +8,10 @@ $(function(){
 				function(str){
 					if(str=="1"){
 						//保存cookie
+							userName=$("#txt2").val()
+							userPass=$("#txt3").val()
+						addCookie("userName",userName,7);
+						addCookie("userPass",userPass,7);
 						
 						
 						alert("恭喜您，登陆成功！")

@@ -11,6 +11,7 @@ body{
 }
 .r{
 	float:right;
+	
 	}
 .main{
   margin: 0 auto;
@@ -54,14 +55,15 @@ body{
   left: 0; }
 
 .ul-pic {
+	height: 80px;
+	overflow: hidden;
   list-style: none;
   margin-top: 20px;
   margin-left: 10px; }
 
 .ul-pic li {
-  float: left;
-  padding-right: 18px; }
-
+    float: left;
+    padding-right: 18px; }
 #goods-msg {
   margin-top: 12px;
   width: 685px;
@@ -179,7 +181,9 @@ body{
     line-height: 43px;
     float: left;
     text-align: center;
-    margin-right: 16px; }
+    margin-right: 16px;
+    outline: none; 
+    cursor: pointer;}
 
 .cars :nth-child(1) {
   background: #B32424;
