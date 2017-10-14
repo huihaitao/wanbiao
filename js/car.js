@@ -13,7 +13,8 @@ function cal(obj,oper){
 	obj.previousElementSibling.innerHTML=num;
 	//2、总价
 	//1)、获取单价
-	var price = parseFloat(obj.parentNode.previousElementSibling.innerHTML.substring(1));
+	var price = obj.parentNode.previousElementSibling.innerHTML.substring(1);
+//	console.log(price)
 	//2）、计算总价
 	var money = num*price;
 	obj.parentNode.nextElementSibling.firstElementChild.innerHTML = "￥"+money;
@@ -30,14 +31,36 @@ function cal(obj,oper){
 	trs[trs.length-1].children[2].firstElementChild.innerHTML = letter;
 	//4、改变数量
 	
+	
+	
+	
+	
 }
 window.onload=function(){
 	
 	let trs =w$("tbs").firstElementChild.children;
 	
+	$(function(){
+		$("#btn1").click(function(){
+			$(":checkbox").checkAll($("#btn1").attr("checked"))
+		})
+		$("#btn2").click(function(){
+			$(":checkbox").checkAll($("#btn2").attr("checked"))
+		})
+		$(".button").click(function(){
+			$(".button").checkParent($("#btn1"))
+		})
+		$(".button").click(function(){
+			$(".button").checkParent($("#btn2"))
+		})
+		
+		
+	})
+	
 	for(let i=1;i<trs.length;i++){
 		//--
 		trs[i].children[4].children[0].onclick=function(){
+//			console.log(trs[i].children[4].children[0])
 			cal(this.nextElementSibling.nextElementSibling,"-");			
 		}	
 		//++
@@ -46,10 +69,15 @@ window.onload=function(){
 		}
 		trs[i].children[6].firstElementChild.onclick=function(){
 			alert("亲，确定要删除该宝贝吗")
-			 trs[i].parentNode.removeChild(trs[i]);
+			trs[i].parentNode.removeChild(this.parentNode.parentNode);
 		}
+		
+		
+		
+		
 
 	}
 	
 }
 
+	

@@ -43,7 +43,7 @@
 			<table id="tbs" style="border-spacing: 0 20px">
 				<tr class="content_a" style="width: 1000px;background: #f2f2f2;">
 					<td>
-						<input type="checkbox" style="outline: none;"/> 
+						<input type="checkbox" style="outline: none;" id="btn1"/> 
 						<span style="margin-left: 20px;">全选</span>
 					</td>
 					<td>商品信息</td>
@@ -53,7 +53,7 @@
 				</tr>
 				
 				<tr class="content_b" style="margin: 20px 0 0 0;">
-					<td><input type="checkbox" /></td>
+					<td><input type="checkbox" class="button"/></td><!------------------------------->
 					<td><img src="img/shangpin1.jpg"/></td>
 					<td>
 						<p>雅克利曼-The Expendables 敢死队系列 E-225 中性石英表</p>
@@ -69,7 +69,7 @@
 					<td><span id="shanchu" style="color: #999;font-size: 20px;cursor: pointer;">x</span></td>
 				</tr>
 				<tr class="content_b" style="margin: 20px 0 0 0;">
-					<td><input type="checkbox" /></td>
+					<td><input type="checkbox" class="button"/></td>
 					<td><img src="img/shangpin2.jpg"/></td>
 					<td>
 						<p>雅克利曼-The Expendables 敢死队系列 E-225 中性石英表</p>
@@ -85,9 +85,10 @@
 					<td><span id="shanchu" style="color: #999;font-size: 20px;cursor: pointer;">x</span></td>
 				</tr>
 				
+				
 				<tr class="content_c"> 
 					<td>
-						<input type="checkbox" style="outline: none;"/> 
+						<input type="checkbox" style="outline: none;" id="btn2"/> 
 						<span style="margin-left: 20px;">全选</span>
 					</td>
 					<td class="content_d" style="width: 500px;"><a href="#">删除选中商品</a></td>
@@ -142,4 +143,21 @@
 	</body>
 </html>
 <script type="text/javascript" src="js/w$.js" ></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/check.js" ></script>
 <script type="text/javascript" src="js/car.js" ></script>
+<script>
+var str1="they are student"
+var str2="aeiou"
+for(var i=0;i<str2.length;i++){
+	var m=str2.charAt(i);
+	for(var j=0;j<str1.length;j++){
+		if(str1.indexOf(m)>-1){
+			str1=str1.substring(0,str1.indexOf(m))+str1.substring(str1.indexOf(m)+1,)
+		}
+		
+	}
+
+}
+alert(str1)
+</script>

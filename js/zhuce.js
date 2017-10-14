@@ -13,6 +13,8 @@ w$("txt1").onblur = function(){
 			success:function(data){
 				if(data=="1"){
 					jQuery("#spans").html("该手机号已经被注册了");
+					jQuery(".imgs2").css("opacity","0");
+					jQuery("#spans").css("color","red");
 					    
 				}else{
 					jQuery("#spans").html("该手机号没有人使用");
@@ -20,7 +22,8 @@ w$("txt1").onblur = function(){
 					jQuery("#spans").css("color","green");
 				}
 			}		
-		});	}else if(w$("txt1").value==""){
+		});	
+	}else if(w$("txt1").value==""){
 			w$("spans").innerHTML ="";
 		}else{
 			w$("spans").innerHTML = "请检查您的手机号格式是否正确";
